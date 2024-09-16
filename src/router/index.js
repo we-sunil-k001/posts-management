@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Posts from '../views/Posts.vue'
-import PostDetails from '../components/PostDetails.vue'
+import PostDetails from '../views/PostDetails.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -8,12 +8,13 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Posts
+      component: Posts  // Main page will be showing list of posts
     },
     {
-      path: '/post-details/id',
+      path: '/post/:id',   // Dynamic route ID for post details
       name: 'post-details',
-      component: PostDetails
+      component: PostDetails,
+      props: true,
     }
  
   ]

@@ -1,10 +1,10 @@
 <template>
-  <div class="container mt-4">
+  <div class="container-fluid col-lg-11 mt-5 pt-5">
     <h3 class="text-left text-success mb-4">All Posts</h3>
     <div class="row">
       <div v-for="post in posts" 
-        :key="post.id" style="border: 2px;"
-        class="col-lg-4 col-md-6 mb-4">
+        :key="post.id" 
+        class="col-lg-4 col-md-4 mb-4">
         <PostCard :postAllData="post" @click="goToPost(post.id)" />
       </div>
     </div>
@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import PostCard from '@/components/PostCard.vue';
+import PostCard from '../components/PostCard.vue';
 import { useRouter } from 'vue-router';
 
 const posts = ref([]);

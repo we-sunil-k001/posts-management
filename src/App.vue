@@ -1,7 +1,6 @@
 <template>
-  <div id="app">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <div class="container-fluid">
         <!-- <a class="navbar-brand" href="#">Sunil Kumar</a> -->
               <router-link class="navbar-brand" to="/">Home</router-link>
@@ -25,7 +24,8 @@
         </div>
       </div>
     </nav>
-
+    
+  <div id="app">
     <!-- Router View for Pages -->
     <main class="mt-4">
       <router-view />
