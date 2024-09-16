@@ -3,7 +3,7 @@
     <h3 class="text-left text-success mb-4">All Posts</h3>
     <div class="row">
       <div v-for="post in posts" :key="post.id" class="col-lg-4 col-md-4 mb-4">
-        <PostCard :postAllData="post" @click="goToPost(post.id)" />
+        <PostCard :post_all_data="post" @click="goToPost(post.id)" />
       </div>
     </div>
   </div>
@@ -14,6 +14,7 @@
   import PostCard from '../components/PostCard.vue';
   import { useRouter } from 'vue-router';
   import { useHead } from '@vueuse/head';   // for Dynamic Meta
+  
 
   const posts = ref([]);
   // console.log(posts);
