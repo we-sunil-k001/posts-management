@@ -2,8 +2,7 @@
   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">Sunil Kumar</a> -->
-              <router-link class="navbar-brand" to="/">Home</router-link>
+        <router-link class="navbar-brand" to="/">Home</router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -11,8 +10,7 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">

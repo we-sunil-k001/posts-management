@@ -1,13 +1,13 @@
 <template>
 
   <div class="card" @click="handleClick">
-    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+    <a><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
     <div class="card-body">
-      <div class="small text-muted">{{ postAllData.id }}</div>
-      <h2 class="card-title h4">{{ postAllData.title.slice(0, 12) }}</h2>
-      <p class="card-text">{{ postAllData.body.slice(0, 100) }}
+      <!-- <div class="small text-muted">{{ postAllData.id }}</div> -->
+      <h3 class="card-title h4">{{ postAllData.id }}. {{ postAllData.title.slice(0, 12) }}</h3>
+      <p class="card-text">{{ postAllData.body.slice(0, 80) }}..
       </p>
-      <a class="btn btn-primary" href="#!">Read more →</a>
+      <a class="btn btn-success">Read more →</a>
     </div>
   </div>
 </template>
