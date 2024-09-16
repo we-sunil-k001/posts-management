@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <RouterLink to="/" class="nav-link" aria-current="page">Profile</RouterLink>
+              <!-- <RouterLink to="/" class="nav-link" aria-current="page">Profile</RouterLink> -->
             </li>
           </ul>
         </div>
