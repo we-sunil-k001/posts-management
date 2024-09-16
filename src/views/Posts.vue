@@ -1,12 +1,11 @@
 <template>
   <div class="container mt-4">
-    <h1 class="text-center mb-4">Posts</h1>
+    <h3 class="text-left text-success mb-4">All Posts</h3>
     <div class="row">
-      <div 
-        v-for="post in posts" 
-        :key="post.id" 
+      <div v-for="post in posts" 
+        :key="post.id" style="border: 2px;"
         class="col-lg-4 col-md-6 mb-4">
-        <PostCard :post="post" @click="goToPost(post.id)" />
+        <PostCard :postAllData="post" @click="goToPost(post.id)" />
       </div>
     </div>
   </div>
@@ -18,7 +17,7 @@ import PostCard from '@/components/PostCard.vue';
 import { useRouter } from 'vue-router';
 
 const posts = ref([]);
-console.log(posts);
+// console.log(posts);
 const router = useRouter();
 
 // Fetching posts from a mock API (e.g., jsonplaceholder)
@@ -30,7 +29,7 @@ const fetchPosts = async () => {
 // Navigating to post details
 const goToPost = (postId) => {
   router.push({ name: 'post-details', params: { id: postId } });
-};
+};  
 
 // Fetching posts when the component is mounted
 onMounted(() => {
@@ -40,4 +39,5 @@ onMounted(() => {
 
 <style scoped>
 /* Add custom styles here if needed */
+
 </style>
