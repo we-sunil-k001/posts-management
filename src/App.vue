@@ -1,0 +1,41 @@
+<template>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <router-link class="navbar-brand" to="/">Home</router-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <!-- <RouterLink to="/" class="nav-link" aria-current="page">Profile</RouterLink> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+  <div id="app">
+    <!-- Router View for Pages -->
+    <main class="mt-4">
+      <router-view />
+    </main>
+  </div>
+</template>
+
+<script setup>
+// No JavaScript logic is needed here for now, since the main structure is handled by the router.
+</script>
+
+<style>
+/* Add any global styles here */
+
+</style>
